@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - GTI FATEC Jahu</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo-fatec.jpg" alt="Logo FATEC Jahu">
+        <h1>Gestão da Tecnologia da Informação</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="disciplinas.html">Disciplina</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="formulario.html">Formulário de Interesse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulário de Interesse</h2>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cidade">Cidade de Origem:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="interesse">Área de Interesse:</label>
+                <select id="interesse" name="interesse">
+                    <option value="gestao">Gestão da Tecnologia da Informação</option>
+                    <option value="desenv">Desenvolvimento de Software Multiplataforma</option>
+                    <option value="sistint">Sistemas para Internet</option>
+                </select>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>FATEC Jahu - Gestão da Tecnologia da Informação</p>
+        <p>Contato: gti@fatecjahu.edu.br</p>
+    </footer>
+</body>
+</html>

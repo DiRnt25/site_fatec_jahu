@@ -1,0 +1,123 @@
+/* tabelas.css - Estilos específicos para tabelas do site GTI FATEC Jahu */
+
+/* Estilos gerais para todas as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho das tabelas */
+th {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Células das tabelas */
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+}
+
+/* Linhas alternadas para melhor legibilidade */
+tr:nth-child(even) {
+    background-color: #b8b0b0;
+}
+
+/* Efeito hover nas linhas */
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Estilos específicos para tabela de disciplinas */
+table.disciplinas {
+    margin-bottom: 2.5rem;
+}
+
+table.disciplinas td:first-child {
+    font-weight: 500;
+    color: #003366;
+}
+
+table.disciplinas a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+table.disciplinas a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Estilos específicos para tabela de professores */
+table.professores td:nth-child(3) {
+    font-style: italic;
+    color: #555;
+}
+
+table.professores a[href^="mailto:"] {
+    color: #0066cc;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+table.professores a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
+/* Destaque para a coluna de carga horária */
+td:last-child {
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    th, td {
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+/*Estilo para tabela Disciplina */
+
+.disciplinas-container {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.disciplinas-nome {
+    font-weight: bold;
+    width: 200px;
+    padding-right: 20px;
+}
+.disciplinas-resumo {
+    flex: 1;
+}
+.disciplinas-resumo ul {
+    margin-top: 0;
+    padding-left: 20px;
+}
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
